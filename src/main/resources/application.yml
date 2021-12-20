@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: REST API
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://dbserver/kinto
+    username: chig1215
+    password: chig1215
+server:
+  port: 8080
