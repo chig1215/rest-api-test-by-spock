@@ -14,7 +14,7 @@ services:
     restart: always
     command: --default-authentication-plugin=mysql_native_password
     ports:
-      - 3306:3306
+      - "3306:3306"
     volumes:
       - ./docker/mysql/conf.d:/etc/mysql/conf.d
       - ./docker/mysql/initdb.d:/docker-entrypoint-initdb.d
@@ -41,7 +41,7 @@ services:
     container_name: spring-app
     build: ./docker/spring
     depends_on:
-      - dbserver
+      - flyway-migration
     ports:
       - "8080:8080"
     volumes:
