@@ -1,3 +1,2 @@
-FROM mysql:5.7
+FROM mysql:latest
 MAINTAINER chig1215
-RUN touch /var/log/mysql/mysqld.log

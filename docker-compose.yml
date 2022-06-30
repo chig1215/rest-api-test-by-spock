@@ -5,7 +5,7 @@ services:
     build:
       context: ./docker/mysql # Dockerfileを含むディレクトリへのパス
       dockerfile: Dockerfile  # Dockerfile名
-    image: chig1215/mysql:5.7 # イメージ名
+    image: chig1215/mysql:latest # イメージ名
     environment:
       MYSQL_ROOT_PASSWORD: root # 環境変数（rootユーザのパスワード）
       MYSQL_USER: chig1215      # 環境変数（ユーザ）

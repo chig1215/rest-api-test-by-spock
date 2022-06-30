@@ -16,7 +16,7 @@ public class MySQLContainerContextInitializer
     private static final Logger LOGGER = LoggerFactory.getLogger(MySQLContainerContextInitializer.class);
 
     private static final MySQLContainer MYSQL =
-            new MySQLContainer("mysql:5.7") {
+            new MySQLContainer("mysql:latest") {
                 {
                     withDatabaseName("kinto");
                     withUsername("chig1215");
