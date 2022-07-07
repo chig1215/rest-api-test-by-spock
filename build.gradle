@@ -3,6 +3,7 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
     id 'groovy'
+    id 'jacoco'
 }
 
 group = 'com.example'
@@ -46,6 +47,8 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+test.finalizedBy jacocoTestReport
 
 bootBuildImage {
     builder = 'paketobuildpacks/builder:tiny'
